@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row">
+        <div class=" bg-white col-2"><b>Browse job category</b></div>
+        <div class=" bg-white col-2 "><img src="C:\Users\namra\OneDrive\Documents\Desktop\bell.jpg" width="50" height="30" class="d-inline-block align-top" alt=""> </a><b>3D Design</b></div>
+        <div class=" bg-white col-2"><img src="C:\Users\namra\OneDrive\Documents\Desktop\pen.jpg" width="50" height="30" class="d-inline-block align-top" alt=""></a><b> Logo Design</b></div>
+        <div class=" bg-white col-2"><img src="C:\Users\namra\OneDrive\Documents\Desktop\photoshop.jpg" width="50" height="30" class="d-inline-block align-top" alt=""></a> <b>Photoshop</b></div>
+        <div class=" bg-white col-2"><img src="C:\Users\namra\OneDrive\Documents\Desktop\ui.jpg" width="50" height="30" class="d-inline-block align-top" alt=""> </a><b>Ui Design</b></div>
+        <div class=" bg-white col-2"><img src="C:\Users\namra\OneDrive\Documents\Desktop\drawing.jpg" width="50" height="30" class="d-inline-block align-top" alt=""> </a><b>Drawing</b></div>
+    </div>
+    <div class="row p-3">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"><button type="button" class="btn btn-light">Sort By A-Z </button></div>
+        <div class="col-2 dropdown">
+            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Sort By Rating ASC
+            </a>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <h5>Filter freelancers by</h5>
+            <h5>Start Your Search</h5>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Type keyword" title="Type in a name">
+
+            <ul id="myUL">
+                <li><a href="#">Freelancer type (0 selected)</a></li>
+                <li><a href="#">Hourly Rate</a></li>
+
+                <li><a href="#">Industrial experience (0 selected)</a></li>
+                <li><a href="#">Specialization</a></li>
+
+                <li><a href="#">Skills (0 selected )</a></li>
+                <li><a href="#">Location (0 selecetd )</a></li>
+                <li><a href="#">Languages (0 selected)</a></li>
+            </ul>
+
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5">
+            <div class="card w-80 h-27">
+                <div class="card-body" style="background-color:rgb(223, 238, 185);">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: rgb(238, 32, 118);
+                        }
+                    </style>
+                    </head>
+                    <div align="right">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>(10 Feedback)</p>
+                    </div>
+
+                    <img src="C:\Users\namra\OneDrive\Documents\Desktop\lady.jpg" alt="John" style="width:20%" align="left">
+                    <h5 class="card-title">Jessica Stevens</h5>
+                    <p>Making it all make sense</p>
+                    <p>₹650.00 / hr |🇮🇳 india |❤️save</p>
+                    <p class="card-text">Excepteur sint occaecuat non prdct sauent in culpa qui desserr malat labotng sahg perapects cmsis error.</p>
+                    <div class="row">
+                        <div class="col-3">css</div>
+                        <div class="col-3">Html</div>
+                        <div class="col-3">photoshop</div>
+                        <div class="col-3">figma</div>
+                    </div>
+                    <div style="margin: 4px 0;">
+                    </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card w-80 h-27">
+                <div class="card-body">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: rgb(238, 32, 118);
+                        }
+                    </style>
+                    </head>
+                    <div align="right">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>(10 Feedback)</p>
+                    </div>
+
+                    <img src="C:\Users\namra\OneDrive\Documents\Desktop\lady.jpg" alt="John" style="width:20%" align="left">
+                    <h5 class="card-title">Jessica Stevens</h5>
+                    <p>Making it all make sense</p>
+                    <p>₹650.00 / hr |🇮🇳 india |❤️save</p>
+                    <p class="card-text">Excepteur sint occaecuat non prdct sauent in culpa qui desserr malat labotng sahg perapects cmsis error.</p>
+                    <div class="row">
+                        <div class="col-3">css</div>
+                        <div class="col-3">Html</div>
+                        <div class="col-3">photoshop</div>
+                        <div class="col-3">figma</div>
+                    </div>
+                    <div style="margin: 4px 0;">
+                    </div>
+                    </p>
+                </div>
+            </div>
+            <div class="card w-80 h-27">
+                <div class="card-body">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <style>
+                        .checked {
+                            color: rgb(238, 32, 118);
+                        }
+                    </style>
+                    </head>
+                    <div align="right">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>(10 Feedback)</p>
+                    </div>
+
+                    <img src="C:\Users\namra\OneDrive\Documents\Desktop\lady.jpg" alt="John" style="width:20%" align="left">
+                    <h5 class="card-title">Jessica Stevens</h5>
+                    <p>Making it all make sense</p>
+                    <p>₹650.00 / hr |🇮🇳 india |❤️save</p>
+                    <p class="card-text">Excepteur sint occaecuat non prdct sauent in culpa qui desserr malat labotng sahg perapects cmsis error.</p>
+                    <div class="row">
+                        <div class="col-3">css</div>
+                        <div class="col-3">Html</div>
+                        <div class="col-3">photoshop</div>
+                        <div class="col-3">figma</div>
+                    </div>
+                    <div style="margin: 4px 0;">
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+        
+        #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+        }
+        
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+        }
+    </style>
+    </div>
+    <div class="col-2"></div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</html>
