@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimenzions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Asap+Condensed&family=Bebas+Neue&family=Cinzel+Decorative:wght@700&family=Fjalla+One&family=Fugaz+One&family=Hubballi&family=Koulen&family=League+Gothic&family=Lobster&family=Oswald:wght@500&family=Pacifico&family=Playfair+Display&family=Poppins&family=Rambla&family=Righteous&family=Ropa+Sans&family=Staatliches&family=Yanone+Kaffeesatz:wght@500&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navbar m-0 p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 py-3" style="background-color:#2e3435;">
+            <div class="container ">
+                <a class="navbar-brand text-light" href="#"><img src="" alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown2">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item ">
+                            <li class="nav-item mx-lg-6">
+                                <a class="nav-link text-light" href="#">DIMENZIONS</a>
+                            </li>
+                            <a class="nav-link" style="color: rgb(255, 5, 72);" aria-current="page" href="{% url 'home' %}">HOME</a>
+                        </li>
+
+                        <li class="nav-item mx-lg-5">
+                            <a class="nav-link text-light" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link text-light" href="{% url '' %}">PAGES</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <a class="nav-link text-light" href="{% url '' %}">CATEGORY</a>
+                        </li>
+                        <li class="nav-item mx-lg-3">
+                            <form class="d-flex">
+                                <input class="form-control me-0 rounded-0" type="search" placeholder="Search" aria-label="Search">
+                                <button class="  text-light p-2" style="background-color: rgb(255, 5, 72); border: 0;" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </li>
+
+                        <li class="nav-item mx-lg-3 my-2 my-lg-0">
+
+
+                            <a class=" nav-link text-light  px-4" style="background-color: rgb(255, 5, 72); border: 0; text-decoration: none; padding:6px 0 6px ;" type="submit">SIGNIN</a>
+
+                        </li>
+
+
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <style>
+            .nav-item a {
+                font-size: 18px;
+            }
+            
+            .nav-link {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </section>
+    <section class="banner">
+        <div class="inner">
+            <b>
+                <h1 class="text-light headtext">Create your own</h1>
+            </b>
+            <b>
+                <h1 style="color: rgb(255, 5, 72);" class="headtext">3D Models</h1>
+            </b>
+            <div class="my-3">
+                <a href="{% url 'model' %}" class="btn mx-2" style="background-color: rgb(255, 5, 72);
+                          color: white;">Buy 3D Model</a>
+                <a href="{% url 'freelancer'%}" class="btn mx-2 text-light" style="background-color: gray;">Frelancer</a>
+            </div>
+        </div>
+        <style>
+            .banner {
+                height: 80vh;
+                background-image: url('{% static 'images/assn.png' %}');
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+            
+            .headtext {
+                font-size: 70px;
+                font-weight: 600;
+            }
+            
+            .inner {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            @media only screen and (max-width:800px) {
+                .headtext {
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+                .banner {
+                    height: 50vh;
+                    background-size: cover;
+                }
+            }
+        </style>
+    </section>
+    <section class=" pinkbox  w-100 ">
+        <div class="pinkbox0 container">
+            <div class="row  text-light p-0 m-0">
+                <div class="col-lg-3  flex flex-column pbox">
+                    <i class="fa-solid fa-mobile-screen p-3" style="font-size: 45px;"></i>
+                    <h4>Responsive Design</h4>
+                    <p style="text-align: center;" class="p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque temporibus, at non harum sunt nostrum deserunt debitis, excepturi, quia est dignissimos? Officia sapiente ex non dicta possimus facilis quisquam nisi?
+                    </p>
+                </div>
+                <div class="col-lg-3  flex flex-column  pbox p-4">
+                    <i class="fa-solid fa-gem p-3" style="font-size: 45px;"></i>
+                    <h4>Award Winning</h4>
+                    <p style="text-align: center;" class="p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque temporibus, at non harum sunt nostrum deserunt debitis, excepturi, quia est dignissimos? Officia sapiente ex non dicta possimus facilis quisquam nisi?
+                    </p>
+                </div>
+                <div class="col-lg-3 flex flex-column pbox p-4">
+                    <i class="fa-solid fa-laptop p-3" style="font-size: 45px;"></i>
+                    <h4>Video tutorial</h4>
+                    <p style="text-align: center;" class="p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque temporibus, at non harum sunt nostrum deserunt debitis, excepturi, quia est dignissimos? Officia sapiente ex non dicta possimus facilis quisquam nisi?
+                    </p>
+                </div>
+                <div class="col-lg-3 flex flex-column pbox p-4">
+                    <i class="fa-solid fa-gift p-3" style="font-size: 45px;"></i>
+                    <h4>Awesome Gift</h4>
+                    <p style="text-align: center;" class="p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque temporibus, at non harum sunt nostrum deserunt debitis, excepturi, quia est dignissimos? Officia sapiente ex non dicta possimus facilis quisquam nisi?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .pinkbox {
+                background-color: rgb(255, 5, 72);
+                background-image: url('{% static 'images/triangle.png' %}');
+                background-size: contain;
+            }
+            
+            .pbox:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+                transition: 1s;
+            }
+        </style>
+    </section>
+    <section class="tabs m-3">
+        <ul class="nav nav-tabs d-flex align-items-center justify-content-center border-0" id="myTab" role="tablist">
+            <li class="nav-item  blink0" role="presentation">
+                <button class="nav-link active px-5 blink" id="home-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="true">
+                    <h4>New</h4>
+                </button>
+            </li>
+            <li class="nav-item blink0" role="presentation">
+                <button class="nav-link px-5 blink" id="profile-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">
+                    <h4>Special</h4>
+                </button>
+            </li>
+            <li class="nav-item  blink0" role="presentation">
+                <button class="nav-link px-5 blink" id="contact-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="false">
+                    <h4>Collection</h4>
+                </button>
+            </li>
+            <li class="nav-item blink0" role="presentation">
+                <button class="nav-link px-5 blink" id="contact-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab" aria-controls="featured" aria-selected="false">
+                    <h4>featured</h4>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content border-0" id="myTabContent">
+            <div class="tab-pane fade show active container" id="new" role="tabpanel" aria-labelledby="home-tab">
+                <div class="cards-list">
+                    <a href="{% url 'product'%}" class="card1 bg-light shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="{% static 'images/model.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">Creature Walk</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">100.0 Rs</h5>
+                                </div>
+                                <div class="right">
+                                    <h5>3D</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{% url 'product'%}" class="card1 bg-light shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="{% static 'images/model.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">Creature Walk</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">100.0 Rs</h5>
+                                </div>
+                                <div class="right">
+                                    <h5>3D</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="card1 bg-light shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="{% static 'images/model.png'%}" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">Creature Walk</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">100.0 Rs</h5>
+                                </div>
+                                <div class="right">
+                                    <h5>3D</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="cards-list container">
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="https://miro.medium.com/max/888/1*Kkvak-YrvGEGQgYJTHrrFQ.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Creature Walk
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="https://miro.medium.com/max/888/1*Kkvak-YrvGEGQgYJTHrrFQ.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Creature Walk
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="https://i.ytimg.com/vi/Pxe9MQyix24/maxresdefault.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Creature Walk
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="collection" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="cards-list container">
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="https://i.ytimg.com/vi/Pxe9MQyix24/maxresdefault.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Card title
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="https://i.ytimg.com/vi/Pxe9MQyix24/maxresdefault.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Card title
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1 shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="C:\Users\namra\Downloads\maxresdefault.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Card title
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="cards-list">
+                    <div class="card1  shadow-lg" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card border-0 " style="height: 100%; width:100%;">
+                            <img src="C:\Users\namra\Downloads\maxresdefault.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex container">
+                                <div class="left">
+                                    <h5 class="card-title text-dark">
+                                        Card title
+                                    </h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star "></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <h5 class="price my-2">
+                                        100.0 Rs
+                                    </h5>
+                                </div>
+                                <div class="right">
+                                    <h5>
+                                        3D
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            a {
+                text-decoration: none;
+                color: gray;
+            }
+            
+            .left {
+                width: 50%;
+            }
+            
+            .right {
+                width: 50%;
+            }
+            
+            .right h5 {
+                text-align: end;
+            }
+            
+            .nav-item button {
+                color: black;
+            }
+            
+            .nav-item:hover button {
+                color: rgb(255, 5, 72);
+                border: none;
+            }
+            
+            .topclr {
+                font-weight: 600;
+                color: rgb(176, 176, 176);
+            }
+            
+            .topclr:hover {
+                color: rgb(255, 5, 72);
+            }
+            
+            .nav-tabs .nav-item .nav-link {
+                background-color: white color: gray;
+            }
+            
+            .nav-tabs .nav-item .nav-link.active {
+                color: rgb(255, 5, 72);
+                border: none;
+            }
+            
+            .tab-content {
+                border: 1px solid #dee2e6;
+                border-top: transparent;
+                padding: 15px;
+            }
+            
+            .tab-content .tab-pane {
+                background-color: #FFF;
+                color: gray;
+                min-height: 200px;
+                height: auto;
+            }
+            
+            .card img {}
+            
+            .card1 {
+                background-color: rgba(0, 0, 0, 3);
+                margin: 10px auto;
+                width: 400px;
+                min-height: 350px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                cursor: pointer;
+                transition: 0.4s;
+            }
+            
+            .star {
+                color: rgb(228, 228, 228);
+                text-shadow: 1px 1px 1px black;
+            }
+            
+            .checked {
+                color: rgb(255, 5, 72);
+            }
+            
+            .price {
+                color: gray;
+            }
+            
+            @media only screen and (max-width:800px) {
+                .blink {
+                    width: 100%;
+                }
+                .blink0 {
+                    width: 100%;
+                }
+                .left {
+                    height: auto;
+                }
+                .right {
+                    height: auto;
+                }
+                .card1 {
+                    min-height: auto;
+                }
+            }
+        </style>
+    </section>
+    <section class="designers">
+        <div class="cover1">
+            <div class="left2 p-lg-5 p-4 text-center">
+                <h3 style="font-weight: 600;">
+                    TOP DESIGNERS OF THIS WEEK
+                </h3>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque suscipit beatae quas.
+                </P>
+                <div class="row container-fluid">
+                    <div class="col-lg-4 flexy my-2">
+                        <img src="https://png.pngitem.com/pimgs/s/627-6275754_chad-profile-pic-profile-photo-circle-png-transparent.png" alt="" width="150px" class="rounded rounded-circle">
+                        <h6>
+                            name
+                        </h6>
+                        <p style=" color: rgb(255, 5, 72);">
+                            View More
+                        </p>
+                    </div>
+                    <div class="col-lg-4 flexy">
+                        <img src="https://png.pngitem.com/pimgs/s/627-6275754_chad-profile-pic-profile-photo-circle-png-transparent.png" alt="" width="150px" class="rounded rounded-circle">
+                        <h6>
+                            name
+                        </h6>
+                        <p style=" color: rgb(255, 5, 72);">
+                            View More
+                        </p>
+                    </div>
+                    <div class="col-lg-4 flexy">
+                        <img src="https://png.pngitem.com/pimgs/s/627-6275754_chad-profile-pic-profile-photo-circle-png-transparent.png" alt="" width="150px" class="rounded rounded-circle">
+                        <h6>
+                            name
+                        </h6>
+                        <p style=" color: rgb(255, 5, 72);">
+                            View More
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right2 container-fluid">
+                <img src="{% static 'images/ptree.png' %}" class="tree " alt="">
+            </div>
+        </div>
+        <style>
+            .right2 .tree {
+                width: 550px;
+                margin-top: -120px;
+            }
+            
+            .flexy {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            .designers {
+                background-image: url('https://img.freepik.com/free-vector/3d-shapes-sky-tones-background_52683-35351.jpg?w=2000');
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            .cover1 {
+                background-color: rgba(255, 255, 255, 0.6);
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+            
+            .left2 {
+                width: 60%;
+            }
+            
+            .right2 {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .right2 img {
+                width: 400px;
+            }
+            
+            @media only screen and (max-width:800px) {
+                .cover1 {
+                    display: block;
+                }
+                .left2 {
+                    width: 100%;
+                }
+                .right2 {
+                    width: 100%;
+                }
+                .designers {
+                    height: auto;
+                }
+                .right2 .tree {
+                    width: 250px;
+                    margin-top: auto;
+                    display: none;
+                }
+            }
+        </style>
+    </section>
+    <section class="grayback " style="background-color: rgb(97, 96, 99);">
+        <section class="p-lg-5 ">
+            <h2 style="font-weight: 600;
+                       color: rgb(255, 255, 255);" class="text-center pt-4 p-lg-0 " data-aos="fade-up" data-aos-delay="50">
+                BROWSE OUR CATEGORIES
+            </h2>
+            <div class="flexy w-100">
+                <div style="background-color: white;height: 2px; width: 20%;">
+                </div>
+            </div>
+            <div class="cards-list">
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(https://media.istockphoto.com/vectors/paris-landscape-france-city-skyline-background-vector-id1223237742?k=20&m=1223237742&s=612x612&w=0&h=pXUqnLD8aihoi1s8GLKN1Jp1yKzA-YsJkoKCUJAQtUA=); ">
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            3D ARTISTS
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/08/03091106/Trees-1024x682.jpg); ">
+
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            PHOTOSHOP
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(data:image/jpeg;base64,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); ">
+
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            UI DESIGN
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(https://wpmedia.roomsketcher.com/content/uploads/2022/01/06145940/What-is-a-floor-plan-with-dimensions.png); ">
+
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            HOUSE PLANS
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(https://play-lh.googleusercontent.com/DTzWtkxfnKwFO3ruybY1SKjJQnLYeuK3KmQmwV5OQ3dULr5iXxeEtzBLceultrKTIUTr); ">
+
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            LOGO CREATION
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+                <a class="card3" href="{% url 'model'%}" style="background-image: url(https://2.bp.blogspot.com/-EsQFNLIvYXQ/XuZ1LCqaL0I/AAAAAAACG-Y/aGEWvyifJKAx4PqmCup6rPU36gbX13VJwCPcBGAsYHg/s1600/09-Deep-in-thought-Nas-Pencil-Drawings-www-designstack-co.jpg); ">
+
+                    <div class="dark1 flex flex-column">
+                        <h4 class="text-light">
+                            DRAWINGS
+                        </h4>
+                        <p style="color: gray;">
+                            300 Products
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <style>
+            .flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .cards-list {
+                z-index: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            
+            .card3 {
+                margin: 30px auto;
+                width: 400px;
+                height: 400px;
+                background-size: 100% 100%;
+                cursor: pointer;
+                transition: 0.4s;
+                border-radius: 20px;
+            }
+            
+            .dark1 {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 20px;
+            }
+            
+            .card3:hover .dark1 {
+                background-color: rgba(0, 0, 0, 0.8);
+                transition: 1s;
+            }
+            
+            @media all and (max-width: 800px) {
+                .card-list {
+                    /* On small screens, we are no longer using row direction but column */
+                    flex-direction: column;
+                }
+                .card3 {
+                    margin: 10px auto;
+                    width: 90%;
+                    height: 250px;
+                }
+            }
+        </style>
+    </section>
+    <section class="soon">
+        <div class="left4">
+            <div style="background-color: rgba(0,0,0,.5);
+                        height: 100%;
+                        width: 100%;" class="flexy">
+                <h2 class="text-light" style="font-weight: 600;">
+                    COMING SOON !
+                </h2>
+            </div>
+        </div>
+        <div class="right4 p-4">
+            <H4 class="text-light" style="font-weight: 600;">
+                SIGNUP FOR NEWSLETTER
+            </H4>
+            <form class="d-flex mt-3">
+                <input class="px-3 me-0 rounded-0 border-0 search" type="search" placeholder="Search" aria-label="Search">
+                <button class=" p-2 rocket" style="background-color: white;
+                               border: 0;" type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+        <style>
+            .soon {
+                display: flex;
+            }
+            
+            .rocket {
+                color: rgb(255, 5, 72);
+            }
+            
+            .search {
+                width: 450px;
+            }
+            
+            .soon {
+                height: 30vh;
+            }
+            
+            .left4 {
+                background-image: url('{%static 'images/soon2.png' %}');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .right4 {
+                background-color: rgb(255, 5, 72);
+                background-image: url('{%static 'images/triangle.png' %}');
+                background-size: cover;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            
+            @media all and (max-width: 800px) {
+                .right4 {
+                    width: 100%;
+                }
+                .left4 {
+                    width: 100%;
+                    height: 200px;
+                    background-size: cover;
+                }
+                .search {
+                    width: auto;
+                }
+                .soon {
+                    height: auto;
+                }
+                .soon {
+                    display: block;
+                }
+            }
+        </style>
+    </section>
+    <!--footer starts from here-->
+    <footer class="footer p-4 fadeInUp wow p-3" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-4 ">
+                    <h5 class="headin5_amrc col_white_amrc pt2 " style="color:rgb(255, 5, 72)"><img src="img/logod.png" alt=""></h5>
+                    <!--headin5_amrc-->
+                    <p>
+                        <span style=><i class="fa-solid fa-location-dot"></i> &ensp;</span> Dimenzions P Ltd., XI/105-C1,<br> &ensp;&ensp;&ensp; Civil Lane Road, Kochi
+                    </p>
+                    <p class="my-4">
+                        <i class="fa-solid fa-envelope-open-text"></i> &ensp; dimensions@example.com
+                    </p>
+                    <p class="my-4">
+                        <i class="fa-solid fa-phone"></i> &ensp;+91-847547924
+                    </p>
+
+                </div>
+                <div class=" col-sm-5 col-md   ">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-light " style="font-weight: 800;">Recent Post</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li>
+                            <div class="d-flex my-2">
+                                <img src="https://cdn01.alison-static.net/public/html/site/img/coronavirus/touch-typing.png" alt="" width="80px">
+                                <p class="p-2 pe-lg-5" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis autem eaque quidem accusantium. Libero, nulla? </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex my-2">
+                                <img src="https://cdn01.alison-static.net/public/html/site/img/coronavirus/touch-typing.png" alt="" width="80px">
+                                <p class="p-2 pe-lg-5" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis autem eaque quidem accusantium. Libero, nulla? </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex my-2">
+                                <img src="https://cdn01.alison-static.net/public/html/site/img/coronavirus/touch-typing.png" alt="" width="80px">
+                                <p class="p-2 pe-lg-5" style="text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis autem eaque quidem accusantium. Libero, nulla? </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+                <div class=" col-sm-3 col-md  col-6 py-0 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-light" style="font-weight: 800;">
+                        Pages
+                    </h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li class="py-2">
+                            <a href="#">
+                                <h6>Home</h6>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">
+                                <h6>About</h6>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">
+                                <h6>Pages</h6>
+                            </a>
+                        </li>
+                        <li class="py-2">
+                            <a href="#">
+                                <h6>Category</h6>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <div class="black p-3">
+        <!--foote_bottom_ul_amrc ends here-->
+
+        <ul class="social_footer_ul m-0 p-0 flexyy">
+            <li>
+                <a href="http://fb.com" style="color:white;"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="http://linkedin.com" style="color:white;"><i class="fab fa-twitter"></i></a>
+            </li>
+
+            <li>
+                <a href="http://webenlance.com" style="color:white;"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+
+    </div>
+    <style>
+        *footer*/ .col_white_amrc {
+            color: #FFF;
+        }
+        
+        footer {
+            width: 100%;
+            background-color: rgb(74, 72, 77);
+            min-height: 250px;
+            padding: 10px 0px 25px 0px;
+        }
+        
+        .pt2 {
+            padding-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        footer p {
+            font-size: 13px;
+            color: #CCC;
+            padding-bottom: 0px;
+            margin-bottom: 8px;
+        }
+        
+        .mb10 {
+            padding-bottom: 15px;
+        }
+        
+        .footer_ul_amrc {
+            margin: 0px;
+            list-style-type: none;
+            font-size: 14px;
+            padding: 0px 0px 10px 0px;
+        }
+        
+        .footer_ul_amrc li {
+            padding: 0px 0px 5px 0px;
+        }
+        
+        .footer_ul_amrc li a {
+            color: #CCC;
+        }
+        
+        .footer_ul_amrc li a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .fleft {
+            float: left;
+        }
+        
+        .padding-right {
+            padding-right: 10px;
+        }
+        
+        .footer_ul2_amrc {
+            margin: 0px;
+            list-style-type: none;
+            padding: 0px;
+        }
+        
+        .footer_ul2_amrc li p {
+            display: table;
+        }
+        
+        .footer_ul2_amrc li a:hover {
+            text-decoration: none;
+        }
+        
+        .footer_ul2_amrc li i {
+            margin-top: 5px;
+        }
+        
+        .bottom_border {
+            border-bottom: 1px solid #323f45;
+            padding-bottom: 20px;
+        }
+        
+        .foote_bottom_ul_amrc {
+            list-style-type: none;
+            padding: 0px;
+            display: table;
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: auto;
+        }
+        
+        .foote_bottom_ul_amrc li {
+            display: inline;
+        }
+        
+        .foote_bottom_ul_amrc li a {
+            color: #999;
+            margin: 0 12px;
+        }
+        
+        .black {
+            background-color: black;
+        }
+        
+        .social_footer_ul {
+            width: 100%;
+            display: table;
+            margin: 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social_footer_ul li {
+            padding-left: 20px;
+            padding-top: 10px;
+            float: left;
+        }
+        
+        .social_footer_ul li a {
+            color: white;
+            border: 1px solid white;
+            padding: 8px 13px;
+            border-radius: 100%;
+        }
+        
+        .social_footer_ul li i {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .flexyy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Credit to https://bootsnipp.com/snippets/bxDBA */
+    </style>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
